@@ -1,0 +1,1 @@
+libavcodec/st_my_test_pix_sum_c.o: libavcodec/st_my_test_pix_sum_c.S
