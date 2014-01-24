@@ -119,6 +119,11 @@ static const uint8_t simple_mmx_permutation[64]={
 
 static const uint8_t idct_sse2_row_perm[8] = {0, 4, 1, 5, 2, 6, 3, 7};
 
+
+//wangchen
+
+extern void my_pix_sum_c(uint8_t * pix, int line_size);
+
 void ff_init_scantable(uint8_t *permutation, ScanTable *st, const uint8_t *src_scantable){
     int i;
     int end;
@@ -178,6 +183,10 @@ void ff_init_scantable_permutation(uint8_t *idct_permutation,
 static int pix_sum_c(uint8_t * pix, int line_size)
 {
     int s, i, j;
+
+
+    //wangchen 20140123
+    printf("\npix_sum_c\n\n");
 
     s = 0;
     for (i = 0; i < 16; i++) {
@@ -2713,7 +2722,8 @@ av_cold void ff_dsputil_init(DSPContext* c, AVCodecContext *avctx)
     c->sum_abs_dctelem = sum_abs_dctelem_c;
     c->gmc1 = gmc1_c;
     c->gmc = ff_gmc_c;
-    c->pix_sum = pix_sum_c;
+    //c->pix_sum = pix_sum_c;
+    c->pix_sum = my_pix_sum_c;//wangchen 20140123
     c->pix_norm1 = pix_norm1_c;
 
     c->fill_block_tab[0] = fill_block16_c;
