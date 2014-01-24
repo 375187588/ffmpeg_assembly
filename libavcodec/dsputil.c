@@ -122,7 +122,8 @@ static const uint8_t idct_sse2_row_perm[8] = {0, 4, 1, 5, 2, 6, 3, 7};
 
 //wangchen
 
-extern void my_pix_sum_c(uint8_t * pix, int line_size);
+extern int my_pix_sum_c(uint8_t * pix, int line_size);
+extern int my_test_pix_sum_c(uint8_t * pix, int line_size);
 
 void ff_init_scantable(uint8_t *permutation, ScanTable *st, const uint8_t *src_scantable){
     int i;
@@ -2723,7 +2724,8 @@ av_cold void ff_dsputil_init(DSPContext* c, AVCodecContext *avctx)
     c->gmc1 = gmc1_c;
     c->gmc = ff_gmc_c;
     //c->pix_sum = pix_sum_c;
-    c->pix_sum = my_pix_sum_c;//wangchen 20140123
+    //c->pix_sum = my_pix_sum_c;//wangchen 20140123
+    c->pix_sum = my_test_pix_sum_c;//wangchen 20140124
     c->pix_norm1 = pix_norm1_c;
 
     c->fill_block_tab[0] = fill_block16_c;
