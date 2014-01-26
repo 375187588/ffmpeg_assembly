@@ -222,7 +222,7 @@ OBJS-$(CONFIG_H263_DECODER)            += h263dec.o h263.o ituh263dec.o        \
 OBJS-$(CONFIG_H263_VAAPI_HWACCEL)      += vaapi_mpeg4.o
 OBJS-$(CONFIG_H263_VDPAU_HWACCEL)      += vdpau_mpeg4.o
 OBJS-$(CONFIG_H263_ENCODER)            += mpeg4videoenc.o mpeg4video.o  \
-                                          h263.o ituh263enc.o flvenc.o ff_jpeg_fdct.o ff_pix_sum_c.o  st_my_test_pix_sum_c.o
+                                          h263.o ituh263enc.o flvenc.o ff_jpeg_fdct.o ff_pix_sum_c.o  st_my_test_pix_sum_c.o my_test_pix_sum_c.o
 OBJS-$(CONFIG_H264_DECODER)            += h264.o                               \
                                           h264_loopfilter.o h264_direct.o      \
                                           cabac.o h264_sei.o h264_ps.o         \

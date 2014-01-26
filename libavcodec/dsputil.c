@@ -191,7 +191,7 @@ static int pix_sum_c(uint8_t * pix, int line_size)
     //printf("\npix_sum_c\n\n");
 
     s = 0;
-    for (i = 0; i < 16; i++) {
+   /*  for (i = 0; i < 16; i++) {
         for (j = 0; j < 16; j += 8) {
             s += pix[0];
             s += pix[1];
@@ -204,6 +204,26 @@ static int pix_sum_c(uint8_t * pix, int line_size)
             pix += 8;
         }
         pix += line_size - 16;
+    }*/
+
+    for (i = 0; i < 16; i++) {
+            s += pix[0];
+            s += pix[1];
+            s += pix[2];
+            s += pix[3];
+            s += pix[4];
+            s += pix[5];
+            s += pix[6];
+            s += pix[7];
+		s += pix[8];
+            s += pix[9];
+            s += pix[10];
+            s += pix[11];
+            s += pix[12];
+            s += pix[13];
+            s += pix[14];
+            s += pix[15];
+        pix += line_size;
     }
     return s;
 }
@@ -2724,9 +2744,9 @@ av_cold void ff_dsputil_init(DSPContext* c, AVCodecContext *avctx)
     c->sum_abs_dctelem = sum_abs_dctelem_c;
     c->gmc1 = gmc1_c;
     c->gmc = ff_gmc_c;
-    c->pix_sum = pix_sum_c;
+    //c->pix_sum = pix_sum_c;
     //c->pix_sum = my_pix_sum_c;//wangchen 20140123
-    //c->pix_sum = my_test_pix_sum_c;//wangchen 20140124
+    c->pix_sum = my_test_pix_sum_c;//wangchen 20140124
     //c->pix_sum = st_my_test_pix_sum_c;//wangchen 20140124
     c->pix_norm1 = pix_norm1_c;
 

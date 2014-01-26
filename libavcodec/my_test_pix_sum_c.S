@@ -3,145 +3,87 @@ my_test_pix_sum_c:
 
  	mov	ip, sp
  	stm.w	(r17, r18, r19, r20, r21, r22, r23, r24, r25, sl, fp, ip, lr, pc), [sp-]
+
  	sub	fp, ip, #4	
- 	sub	sp, sp, #112	
- 	stw	r0, [fp-], #68
- 	stw	r1, [fp-], #72
- 	mov	r14, #0	
- 	stw	r14, [fp-], #64
- 	mov	r15, #0	
- 	stw	r15, [fp-], #60
- 	b	 my_test_pix_sum_c+0x224
- 	mov	r15, #0	
- 	stw	r15, [fp-], #56
- 	b	 my_test_pix_sum_c+0x1f8
- 	nop	
- 	ldw	r15, [fp-], #68
- 	ldb	r14, [r15+]
- 	mov	r13, r14
- 	ldw	r12, [fp-], #64
- 	add	r11, r12, r13
- 	stw	r11, [fp-], #64
- 	ldw	r10, [fp-], #68
- 	add	r9, r10, #1
- 	ldb	r8, [r9+]
- 	mov	r7, r8
- 	ldw	r6, [fp-], #64
- 	add	r5, r6, r7
- 	stw	r5, [fp-], #64
- 	ldw	r4, [fp-], #68
- 	add	r3, r4, #2
- 	ldb	r2, [r3+]
- 	mov	r1, r2
- 	ldw	r0, [fp-], #64
- 	add	ip, r0, r1
- 	stw	ip, [fp-], #64
- 	ldw	lr, [fp-], #68
- 	add	sl, lr, #3
- 	ldb	r24, [sl+]
- 	mov	r23, r24
- 	ldw	r22, [fp-], #64
- 	add	r22, r22, r23
- 	stw	r22, [fp-], #120
- 	ldw	r14, [fp-], #120
- 	stw	r14, [fp-], #64
- 	ldw	r15, [fp-], #68
- 	stw	r15, [fp-], #124
- 	ldw	r14, [fp-], #124
- 	add	r14, r14, #4
- 	stw	r14, [fp-], #116
- 	ldw	r15, [fp-], #116
- 	nop		
- 	ldb	r15, [r15+]
- 	stw	r15, [fp-], #112
- 	ldw	r14, [fp-], #112
- 	stw	r14, [fp-], #108
- 	ldw	r15, [fp-], #64
- 	stw	r15, [fp-], #128
- 	ldw	r14, [fp-], #128
- 	nop		
- 	ldw	r15, [fp-], #108
- 	add	r14, r14, r15
- 	stw	r14, [fp-], #132
- 	ldw	r14, [fp-], #132
- 	stw	r14, [fp-], #64
- 	ldw	r15, [fp-], #68
- 	stw	r15, [fp-], #136
- 	ldw	r14, [fp-], #136
- 	add	r14, r14, #5	
- 	stw	r14, [fp-], #104
- 	ldw	r15, [fp-], #104
- 	nop		
- 	ldb	r15, [r15+]
- 	stw	r15, [fp-], #100
- 	ldw	r14, [fp-], #100
- 	stw	r14, [fp-], #96
- 	ldw	r15, [fp-], #64
- 	stw	r15, [fp-], #140
- 	ldw	r14, [fp-], #140
- 	nop		
- 	ldw	r15, [fp-], #96
- 	add	r14, r14, r15
- 	stw	r14, [fp-], #144
- 	ldw	r14, [fp-], #144
- 	stw	r14, [fp-], #64
- 	ldw	r15, [fp-], #68
- 	stw	r15, [fp-], #148
- 	ldw	r14, [fp-], #148
- 	add	r14, r14, #6
- 	stw	r14, [fp-], #92
- 	ldw	r15, [fp-], #92
- 	nop		
- 	ldb	r15, [r15+]
- 	stw	r15, [fp-], #88
- 	ldw	r14, [fp-], #88
- 	stw	r14, [fp-], #84
- 	ldw	r15, [fp-], #64
- 	stw	r15, [fp-], #152
- 	ldw	r14, [fp-], #152
- 	nop			
- 	ldw	r15, [fp-], #84
- 	add	r14, r14, r15
- 	stw	r14, [fp-], #156
- 	ldw	r14, [fp-], #156
- 	stw	r14, [fp-], #64
- 	ldw	r15, [fp-], #68
- 	stw	r15, [fp-], #160
- 	ldw	r14, [fp-], #160
- 	add	r14, r14, #7	
- 	stw	r14, [fp-], #80
- 	ldw	r15, [fp-], #80
- 	nop		
- 	ldb	r15, [r15+]
- 	stw	r15, [fp-], #76
- 	ldw	r25, [fp-], #76
- 	nop		
- 	ldw	r14, [fp-], #64
- 	stw	r14, [fp-], #164
- 	ldw	r15, [fp-], #164
- 	add	r17, r15, r25
- 	stw	r17, [fp-], #64
- 	ldw	r18, [fp-], #68
- 	add	r19, r18, #8
- 	stw	r19, [fp-], #68
- 	ldw	r20, [fp-], #56
- 	add	r21, r20, #8
- 	stw	r21, [fp-], #56
- 	ldw	r15, [fp-], #56
- 	cmpsub.a	r15, #15
- 	bel	 my_test_pix_sum_c+0x38
- 	ldw	r10, [fp-], #72
- 	sub	r12, r10, #16
- 	ldw	r11, [fp-], #68
- 	add	r13, r11, r12
- 	stw	r13, [fp-], #68
- 	ldw	r14, [fp-], #60
- 	add	r15, r14, #1	
- 	stw	r15, [fp-], #60
- 	ldw	r15, [fp-], #60
- 	cmpsub.a	r15, #15	
- 	bel	my_test_pix_sum_c+0x2c
- 	ldw	r14, [fp-], #64
- 	mov	r15, r14
- 	mov	r0, r15
+ 	sub	sp, sp, #112
+
+#fp-72:line_size, fp-68:源数据指针；r14累加结果；r15计数器	
+
+#r17源数据指针r0，r18line_size-16 r1-16
+	mov    r17, r0
+	mov    r18, r1
+ 	sub	r18, r18, #16
+
+#r19累加计算结果
+	mov    r19, #0
+
+#r20计数器i，r21计数器j
+	mov	r20, #0	
+	mov	r21, #0
+
+#跳转至对计数器i(r15/fp-60)的判断
+ 	b	 ijudge
+
+#计数器i(r15/fp-60)比较完成,如果r15小于等于15，就跳转至此
+#请注意，r15在此处又被用为计数器j，存储在fp-56
+icontinue:
+
+#跳转至计数器j的判断
+ 	b	 jjudge
+
+#计数器j小于等于15，调准至此，开始累加运算
+jcontinue:
+ 	nop
+#加法运算	
+ 	ldb	r22, [r17+]
+ 	add	r19, r19, r22
+ 	ldb	r22, [r17+],#1
+ 	add	r19, r19, r22
+
+ 	ldb	r22, [r17+],#2
+ 	add	r19, r19, r22
+ 	ldb	r22, [r17+],#3
+ 	add	r19, r19, r22
+
+ 	ldb	r22, [r17+],#4
+ 	add	r19, r19, r22
+ 	ldb	r22, [r17+],#5
+ 	add	r19, r19, r22
+
+ 	ldb	r22, [r17+],#6
+ 	add	r19, r19, r22
+ 	ldb	r22, [r17+],#7
+ 	add	r19, r19, r22
+
+#源数据指针加8， pix += 8;
+ 	add	r17, r17, #8
+#计数器j加8
+ 	add	r21, r21, #8
+
+#计数器j(fp-56)判断是否小于等于15
+jjudge:
+ 	cmpsub.a	r21, #15
+ 	bel	 jcontinue
+
+#载入line_size，并减16
+# 	sub	r18, r18, #16 XX
+#不能在这里做，在mov line_size的时候要直接做，因为
+
+#对源数据指针进行下移操作 pix += line_size - 16;
+ 	add	r17, r17, r18
+
+#对计数器i(fp-60)进行加一操作
+ 	add	r20, r20, #1	
+#对计数器j清零
+ 	mov	r21, #0
+
+#计算器i(r15/fp-60)与15比较，小于等于15就跳转至2000040c
+ijudge:
+ 	cmpsub.a	r20, #15	
+ 	bel	icontinue
+
+#保存运算结果r14至r0
+#保存运算结果r19至r0
+ 	mov	r0, r19
+
  	ldm	(r17, r18, r19, r20, r21, r22, r23, r24, r25, sl, fp, sp, pc), [fp-]

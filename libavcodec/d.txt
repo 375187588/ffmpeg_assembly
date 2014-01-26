@@ -1,0 +1,699 @@
+
+st_my_test_pix_sum_c.o:     file format elf32-littleunicore32
+
+
+Disassembly of section .text:
+
+00000000 <st_my_test_pix_sum_c>:
+   0:	92ea7e7e 	stm.w	(r17, r18, r19, r20, r21, r22, r23, r24, r25, sl, fp, lr), [sp-]
+   4:	24ef787d 	sub	sp, sp, #2000	; 0x7d0
+   8:	1a000000 	nop			(mov r0,r0)
+   c:	7d044000 	ldb	r17, [r0+]
+  10:	08078001 	add	lr, r0, r1
+  14:	7d048001 	ldb	r18, [r0+], #1
+  18:	08f70001 	add	ip, lr, r1
+  1c:	7d050002 	ldb	r20, [r0+], #2
+  20:	088cc012 	add	r19, r17, r18
+  24:	7d058003 	ldb	r22, [r0+], #3
+  28:	089d4014 	add	r21, r19, r20
+  2c:	7d06c004 	ldb	fp, [r0+], #4
+  30:	08ae4016 	add	r25, r21, r22
+  34:	7d02c005 	ldb	r11, [r0+], #5
+  38:	08cec01b 	add	fp, r25, fp
+  3c:	08e08001 	add	r2, ip, r1
+  40:	78eec3a8 	stw	fp, [sp+], #936
+  44:	08db400b 	add	r13, fp, r11
+  48:	0810c001 	add	r3, r2, r1
+  4c:	7d030006 	ldb	r12, [r0+], #6
+  50:	08190001 	add	r4, r3, r1
+  54:	7d02c007 	ldb	r11, [r0+], #7
+  58:	086b000c 	add	r12, r13, r12
+  5c:	08214001 	add	r5, r4, r1
+  60:	78eb03a0 	stw	r12, [sp+], #928
+  64:	0862c00b 	add	r11, r12, r11
+  68:	08298001 	add	r6, r5, r1
+  6c:	7d034008 	ldb	r13, [r0+], #8
+  70:	0831c001 	add	r7, r6, r1
+  74:	78eac39c 	stw	r11, [sp+], #924
+  78:	085b400d 	add	r13, r11, r13
+  7c:	083a0001 	add	r8, r7, r1
+  80:	7d030009 	ldb	r12, [r0+], #9
+  84:	08424001 	add	r9, r8, r1
+  88:	78eb4398 	stw	r13, [sp+], #920
+  8c:	086b000c 	add	r12, r13, r12
+  90:	084a8001 	add	r10, r9, r1
+  94:	7d02c00a 	ldb	r11, [r0+], #10
+  98:	78eb0394 	stw	r12, [sp+], #916
+  9c:	0862c00b 	add	r11, r12, r11
+  a0:	1a000000 	nop			(mov r0,r0)
+  a4:	7d03400b 	ldb	r13, [r0+], #11
+  a8:	78eac390 	stw	r11, [sp+], #912
+  ac:	085b400d 	add	r13, r11, r13
+  b0:	1a000000 	nop			(mov r0,r0)
+  b4:	7d03000c 	ldb	r12, [r0+], #12
+  b8:	78eb438c 	stw	r13, [sp+], #908
+  bc:	086b000c 	add	r12, r13, r12
+  c0:	1a000000 	nop			(mov r0,r0)
+  c4:	7d02c00d 	ldb	r11, [r0+], #13
+  c8:	78eb0388 	stw	r12, [sp+], #904
+  cc:	0862c00b 	add	r11, r12, r11
+  d0:	1a000000 	nop			(mov r0,r0)
+  d4:	7d03400e 	ldb	r13, [r0+], #14
+  d8:	78eac384 	stw	r11, [sp+], #900
+  dc:	085b400d 	add	r13, r11, r13
+  e0:	1a000000 	nop			(mov r0,r0)
+  e4:	7d03000f 	ldb	r12, [r0+], #15
+  e8:	78eb4380 	stw	r13, [sp+], #896
+  ec:	5d038001 	ldb	r14, [r0+],r1
+  f0:	78eb8410 	stw	r14, [sp+], #1040
+  f4:	086b800c 	add	r14, r13, r12
+  f8:	1a000000 	nop			(mov r0,r0)
+  fc:	79eb0410 	ldw	r12, [sp+], #1040
+ 100:	7df2c001 	ldb	r11, [lr+], #1
+ 104:	0873000c 	add	r12, r14, r12
+ 108:	78eb0378 	stw	r12, [sp+], #888
+ 10c:	0863800b 	add	r14, r12, r11
+ 110:	1a000000 	nop			(mov r0,r0)
+ 114:	7df34002 	ldb	r13, [lr+], #2
+ 118:	7df2c003 	ldb	r11, [lr+], #3
+ 11c:	0873000d 	add	r12, r14, r13
+ 120:	7df34004 	ldb	r13, [lr+], #4
+ 124:	0863800b 	add	r14, r12, r11
+ 128:	7df2c005 	ldb	r11, [lr+], #5
+ 12c:	0873000d 	add	r12, r14, r13
+ 130:	7df34006 	ldb	r13, [lr+], #6
+ 134:	0863800b 	add	r14, r12, r11
+ 138:	7df2c007 	ldb	r11, [lr+], #7
+ 13c:	0873000d 	add	r12, r14, r13
+ 140:	7df34008 	ldb	r13, [lr+], #8
+ 144:	0863800b 	add	r14, r12, r11
+ 148:	7df2c009 	ldb	r11, [lr+], #9
+ 14c:	0873000d 	add	r12, r14, r13
+ 150:	7df3400a 	ldb	r13, [lr+], #10
+ 154:	0863800b 	add	r14, r12, r11
+ 158:	7df2c00b 	ldb	r11, [lr+], #11
+ 15c:	0873000d 	add	r12, r14, r13
+ 160:	7df3400c 	ldb	r13, [lr+], #12
+ 164:	0863800b 	add	r14, r12, r11
+ 168:	7df2c00d 	ldb	r11, [lr+], #13
+ 16c:	0873000d 	add	r12, r14, r13
+ 170:	7df3400e 	ldb	r13, [lr+], #14
+ 174:	0863800b 	add	r14, r12, r11
+ 178:	7df2c00f 	ldb	r11, [lr+], #15
+ 17c:	0873000d 	add	r12, r14, r13
+ 180:	5df78001 	ldb	lr, [lr+],r1
+ 184:	0863400b 	add	r13, r12, r11
+ 188:	78ef8450 	stw	lr, [sp+], #1104
+ 18c:	7de38001 	ldb	r14, [ip+], #1
+ 190:	086ac01e 	add	r11, r13, lr
+ 194:	7de30002 	ldb	r12, [ip+], #2
+ 198:	085b400e 	add	r13, r11, r14
+ 19c:	7de38003 	ldb	r14, [ip+], #3
+ 1a0:	086ac00c 	add	r11, r13, r12
+ 1a4:	7de30004 	ldb	r12, [ip+], #4
+ 1a8:	085b400e 	add	r13, r11, r14
+ 1ac:	7de38005 	ldb	r14, [ip+], #5
+ 1b0:	086ac00c 	add	r11, r13, r12
+ 1b4:	7de30006 	ldb	r12, [ip+], #6
+ 1b8:	085b400e 	add	r13, r11, r14
+ 1bc:	7de38007 	ldb	r14, [ip+], #7
+ 1c0:	086ac00c 	add	r11, r13, r12
+ 1c4:	7de30008 	ldb	r12, [ip+], #8
+ 1c8:	085b400e 	add	r13, r11, r14
+ 1cc:	7de38009 	ldb	r14, [ip+], #9
+ 1d0:	086ac00c 	add	r11, r13, r12
+ 1d4:	7de3000a 	ldb	r12, [ip+], #10
+ 1d8:	085b400e 	add	r13, r11, r14
+ 1dc:	7de3800b 	ldb	r14, [ip+], #11
+ 1e0:	086ac00c 	add	r11, r13, r12
+ 1e4:	7de3000c 	ldb	r12, [ip+], #12
+ 1e8:	085b400e 	add	r13, r11, r14
+ 1ec:	7de3800d 	ldb	r14, [ip+], #13
+ 1f0:	086ac00c 	add	r11, r13, r12
+ 1f4:	7de3000e 	ldb	r12, [ip+], #14
+ 1f8:	085b400e 	add	r13, r11, r14
+ 1fc:	7de3800f 	ldb	r14, [ip+], #15
+ 200:	086ac00c 	add	r11, r13, r12
+ 204:	5de30001 	ldb	r12, [ip+],r1
+ 208:	085b400e 	add	r13, r11, r14
+ 20c:	7d138001 	ldb	r14, [r2+], #1
+ 210:	086ac00c 	add	r11, r13, r12
+ 214:	7d130002 	ldb	r12, [r2+], #2
+ 218:	085b400e 	add	r13, r11, r14
+ 21c:	7d138003 	ldb	r14, [r2+], #3
+ 220:	086ac00c 	add	r11, r13, r12
+ 224:	7d130004 	ldb	r12, [r2+], #4
+ 228:	085b400e 	add	r13, r11, r14
+ 22c:	7d138005 	ldb	r14, [r2+], #5
+ 230:	086ac00c 	add	r11, r13, r12
+ 234:	7d130006 	ldb	r12, [r2+], #6
+ 238:	085b400e 	add	r13, r11, r14
+ 23c:	7d138007 	ldb	r14, [r2+], #7
+ 240:	086ac00c 	add	r11, r13, r12
+ 244:	7d130008 	ldb	r12, [r2+], #8
+ 248:	085b400e 	add	r13, r11, r14
+ 24c:	7d138009 	ldb	r14, [r2+], #9
+ 250:	086ac00c 	add	r11, r13, r12
+ 254:	7d13000a 	ldb	r12, [r2+], #10
+ 258:	085b400e 	add	r13, r11, r14
+ 25c:	7d13800b 	ldb	r14, [r2+], #11
+ 260:	086ac00c 	add	r11, r13, r12
+ 264:	7d13000c 	ldb	r12, [r2+], #12
+ 268:	085b400e 	add	r13, r11, r14
+ 26c:	7d13800d 	ldb	r14, [r2+], #13
+ 270:	086ac00c 	add	r11, r13, r12
+ 274:	7d13000e 	ldb	r12, [r2+], #14
+ 278:	085b400e 	add	r13, r11, r14
+ 27c:	7d13800f 	ldb	r14, [r2+], #15
+ 280:	086ac00c 	add	r11, r13, r12
+ 284:	5d130001 	ldb	r12, [r2+],r1
+ 288:	085b400e 	add	r13, r11, r14
+ 28c:	7d1b8001 	ldb	r14, [r3+], #1
+ 290:	086ac00c 	add	r11, r13, r12
+ 294:	7d1b0002 	ldb	r12, [r3+], #2
+ 298:	085b400e 	add	r13, r11, r14
+ 29c:	7d1b8003 	ldb	r14, [r3+], #3
+ 2a0:	086ac00c 	add	r11, r13, r12
+ 2a4:	7d1b0004 	ldb	r12, [r3+], #4
+ 2a8:	085b400e 	add	r13, r11, r14
+ 2ac:	7d1b8005 	ldb	r14, [r3+], #5
+ 2b0:	086ac00c 	add	r11, r13, r12
+ 2b4:	7d1b0006 	ldb	r12, [r3+], #6
+ 2b8:	085b400e 	add	r13, r11, r14
+ 2bc:	7d1b8007 	ldb	r14, [r3+], #7
+ 2c0:	086ac00c 	add	r11, r13, r12
+ 2c4:	7d1b0008 	ldb	r12, [r3+], #8
+ 2c8:	085b400e 	add	r13, r11, r14
+ 2cc:	7d1b8009 	ldb	r14, [r3+], #9
+ 2d0:	086ac00c 	add	r11, r13, r12
+ 2d4:	7d1b000a 	ldb	r12, [r3+], #10
+ 2d8:	085b400e 	add	r13, r11, r14
+ 2dc:	7d1b800b 	ldb	r14, [r3+], #11
+ 2e0:	086ac00c 	add	r11, r13, r12
+ 2e4:	7d1b000c 	ldb	r12, [r3+], #12
+ 2e8:	085b400e 	add	r13, r11, r14
+ 2ec:	7d1b800d 	ldb	r14, [r3+], #13
+ 2f0:	086ac00c 	add	r11, r13, r12
+ 2f4:	7d1b000e 	ldb	r12, [r3+], #14
+ 2f8:	085b400e 	add	r13, r11, r14
+ 2fc:	7d1b800f 	ldb	r14, [r3+], #15
+ 300:	086ac00c 	add	r11, r13, r12
+ 304:	5d1b0001 	ldb	r12, [r3+],r1
+ 308:	085b400e 	add	r13, r11, r14
+ 30c:	7d238001 	ldb	r14, [r4+], #1
+ 310:	086ac00c 	add	r11, r13, r12
+ 314:	7d230002 	ldb	r12, [r4+], #2
+ 318:	085b400e 	add	r13, r11, r14
+ 31c:	7d238003 	ldb	r14, [r4+], #3
+ 320:	086ac00c 	add	r11, r13, r12
+ 324:	7d230004 	ldb	r12, [r4+], #4
+ 328:	085b400e 	add	r13, r11, r14
+ 32c:	7d238005 	ldb	r14, [r4+], #5
+ 330:	086ac00c 	add	r11, r13, r12
+ 334:	7d230006 	ldb	r12, [r4+], #6
+ 338:	085b400e 	add	r13, r11, r14
+ 33c:	7d238007 	ldb	r14, [r4+], #7
+ 340:	086ac00c 	add	r11, r13, r12
+ 344:	7d230008 	ldb	r12, [r4+], #8
+ 348:	085b400e 	add	r13, r11, r14
+ 34c:	7d238009 	ldb	r14, [r4+], #9
+ 350:	086ac00c 	add	r11, r13, r12
+ 354:	7d23000a 	ldb	r12, [r4+], #10
+ 358:	085b400e 	add	r13, r11, r14
+ 35c:	7d23800b 	ldb	r14, [r4+], #11
+ 360:	086ac00c 	add	r11, r13, r12
+ 364:	7d23000c 	ldb	r12, [r4+], #12
+ 368:	085b400e 	add	r13, r11, r14
+ 36c:	7d23800d 	ldb	r14, [r4+], #13
+ 370:	086ac00c 	add	r11, r13, r12
+ 374:	7d23000e 	ldb	r12, [r4+], #14
+ 378:	085b400e 	add	r13, r11, r14
+ 37c:	7d23800f 	ldb	r14, [r4+], #15
+ 380:	086ac00c 	add	r11, r13, r12
+ 384:	5d230001 	ldb	r12, [r4+],r1
+ 388:	085b400e 	add	r13, r11, r14
+ 38c:	7d2b8001 	ldb	r14, [r5+], #1
+ 390:	086ac00c 	add	r11, r13, r12
+ 394:	7d2b0002 	ldb	r12, [r5+], #2
+ 398:	085b400e 	add	r13, r11, r14
+ 39c:	7d2b8003 	ldb	r14, [r5+], #3
+ 3a0:	086ac00c 	add	r11, r13, r12
+ 3a4:	7d2b0004 	ldb	r12, [r5+], #4
+ 3a8:	085b400e 	add	r13, r11, r14
+ 3ac:	7d2b8005 	ldb	r14, [r5+], #5
+ 3b0:	086ac00c 	add	r11, r13, r12
+ 3b4:	7d2b0006 	ldb	r12, [r5+], #6
+ 3b8:	085b400e 	add	r13, r11, r14
+ 3bc:	7d2b8007 	ldb	r14, [r5+], #7
+ 3c0:	086ac00c 	add	r11, r13, r12
+ 3c4:	7d2b0008 	ldb	r12, [r5+], #8
+ 3c8:	085b400e 	add	r13, r11, r14
+ 3cc:	7d2b8009 	ldb	r14, [r5+], #9
+ 3d0:	086ac00c 	add	r11, r13, r12
+ 3d4:	7d2b000a 	ldb	r12, [r5+], #10
+ 3d8:	085b400e 	add	r13, r11, r14
+ 3dc:	7d2b800b 	ldb	r14, [r5+], #11
+ 3e0:	086ac00c 	add	r11, r13, r12
+ 3e4:	7d2b000c 	ldb	r12, [r5+], #12
+ 3e8:	085b400e 	add	r13, r11, r14
+ 3ec:	7d2b800d 	ldb	r14, [r5+], #13
+ 3f0:	086ac00c 	add	r11, r13, r12
+ 3f4:	7d2b000e 	ldb	r12, [r5+], #14
+ 3f8:	085b400e 	add	r13, r11, r14
+ 3fc:	7d2b800f 	ldb	r14, [r5+], #15
+ 400:	086ac00c 	add	r11, r13, r12
+ 404:	5d2b0001 	ldb	r12, [r5+],r1
+ 408:	085b400e 	add	r13, r11, r14
+ 40c:	7d338001 	ldb	r14, [r6+], #1
+ 410:	086ac00c 	add	r11, r13, r12
+ 414:	7d330002 	ldb	r12, [r6+], #2
+ 418:	085b400e 	add	r13, r11, r14
+ 41c:	7d338003 	ldb	r14, [r6+], #3
+ 420:	086ac00c 	add	r11, r13, r12
+ 424:	7d330004 	ldb	r12, [r6+], #4
+ 428:	085b400e 	add	r13, r11, r14
+ 42c:	7d338005 	ldb	r14, [r6+], #5
+ 430:	086ac00c 	add	r11, r13, r12
+ 434:	7d330006 	ldb	r12, [r6+], #6
+ 438:	085b400e 	add	r13, r11, r14
+ 43c:	7d338007 	ldb	r14, [r6+], #7
+ 440:	086ac00c 	add	r11, r13, r12
+ 444:	7d330008 	ldb	r12, [r6+], #8
+ 448:	085b400e 	add	r13, r11, r14
+ 44c:	7d338009 	ldb	r14, [r6+], #9
+ 450:	086ac00c 	add	r11, r13, r12
+ 454:	7d33000a 	ldb	r12, [r6+], #10
+ 458:	085b400e 	add	r13, r11, r14
+ 45c:	7d33800b 	ldb	r14, [r6+], #11
+ 460:	086ac00c 	add	r11, r13, r12
+ 464:	7d33000c 	ldb	r12, [r6+], #12
+ 468:	085b400e 	add	r13, r11, r14
+ 46c:	7d33800d 	ldb	r14, [r6+], #13
+ 470:	086ac00c 	add	r11, r13, r12
+ 474:	7d33000e 	ldb	r12, [r6+], #14
+ 478:	085b400e 	add	r13, r11, r14
+ 47c:	7d33800f 	ldb	r14, [r6+], #15
+ 480:	086ac00c 	add	r11, r13, r12
+ 484:	5d330001 	ldb	r12, [r6+],r1
+ 488:	085b400e 	add	r13, r11, r14
+ 48c:	7d3b8001 	ldb	r14, [r7+], #1
+ 490:	086ac00c 	add	r11, r13, r12
+ 494:	7d3b0002 	ldb	r12, [r7+], #2
+ 498:	085b400e 	add	r13, r11, r14
+ 49c:	7d3b8003 	ldb	r14, [r7+], #3
+ 4a0:	086ac00c 	add	r11, r13, r12
+ 4a4:	7d3b0004 	ldb	r12, [r7+], #4
+ 4a8:	085b400e 	add	r13, r11, r14
+ 4ac:	7d3b8005 	ldb	r14, [r7+], #5
+ 4b0:	086ac00c 	add	r11, r13, r12
+ 4b4:	7d3b0006 	ldb	r12, [r7+], #6
+ 4b8:	085b400e 	add	r13, r11, r14
+ 4bc:	7d3b8007 	ldb	r14, [r7+], #7
+ 4c0:	086ac00c 	add	r11, r13, r12
+ 4c4:	7d3b0008 	ldb	r12, [r7+], #8
+ 4c8:	085b400e 	add	r13, r11, r14
+ 4cc:	7d3b8009 	ldb	r14, [r7+], #9
+ 4d0:	086ac00c 	add	r11, r13, r12
+ 4d4:	7d3b000a 	ldb	r12, [r7+], #10
+ 4d8:	085b400e 	add	r13, r11, r14
+ 4dc:	7d3b800b 	ldb	r14, [r7+], #11
+ 4e0:	086ac00c 	add	r11, r13, r12
+ 4e4:	7d3b000c 	ldb	r12, [r7+], #12
+ 4e8:	085b400e 	add	r13, r11, r14
+ 4ec:	7d3b800d 	ldb	r14, [r7+], #13
+ 4f0:	086ac00c 	add	r11, r13, r12
+ 4f4:	7d3b000e 	ldb	r12, [r7+], #14
+ 4f8:	085b400e 	add	r13, r11, r14
+ 4fc:	7d3b800f 	ldb	r14, [r7+], #15
+ 500:	086ac00c 	add	r11, r13, r12
+ 504:	5d3b0001 	ldb	r12, [r7+],r1
+ 508:	085b400e 	add	r13, r11, r14
+ 50c:	7d438001 	ldb	r14, [r8+], #1
+ 510:	086ac00c 	add	r11, r13, r12
+ 514:	7d430002 	ldb	r12, [r8+], #2
+ 518:	085b400e 	add	r13, r11, r14
+ 51c:	7d438003 	ldb	r14, [r8+], #3
+ 520:	086ac00c 	add	r11, r13, r12
+ 524:	7d430004 	ldb	r12, [r8+], #4
+ 528:	085b400e 	add	r13, r11, r14
+ 52c:	7d438005 	ldb	r14, [r8+], #5
+ 530:	086ac00c 	add	r11, r13, r12
+ 534:	7d430006 	ldb	r12, [r8+], #6
+ 538:	085b400e 	add	r13, r11, r14
+ 53c:	7d438007 	ldb	r14, [r8+], #7
+ 540:	086ac00c 	add	r11, r13, r12
+ 544:	7d430008 	ldb	r12, [r8+], #8
+ 548:	085b400e 	add	r13, r11, r14
+ 54c:	7d438009 	ldb	r14, [r8+], #9
+ 550:	086ac00c 	add	r11, r13, r12
+ 554:	7d43000a 	ldb	r12, [r8+], #10
+ 558:	085b400e 	add	r13, r11, r14
+ 55c:	7d43800b 	ldb	r14, [r8+], #11
+ 560:	086ac00c 	add	r11, r13, r12
+ 564:	7d43000c 	ldb	r12, [r8+], #12
+ 568:	085b400e 	add	r13, r11, r14
+ 56c:	7d43800d 	ldb	r14, [r8+], #13
+ 570:	086ac00c 	add	r11, r13, r12
+ 574:	7d43000e 	ldb	r12, [r8+], #14
+ 578:	085b400e 	add	r13, r11, r14
+ 57c:	7d43800f 	ldb	r14, [r8+], #15
+ 580:	086ac00c 	add	r11, r13, r12
+ 584:	5d430001 	ldb	r12, [r8+],r1
+ 588:	085b400e 	add	r13, r11, r14
+ 58c:	7d4b8001 	ldb	r14, [r9+], #1
+ 590:	086ac00c 	add	r11, r13, r12
+ 594:	7d4b0002 	ldb	r12, [r9+], #2
+ 598:	085b400e 	add	r13, r11, r14
+ 59c:	7d4b8003 	ldb	r14, [r9+], #3
+ 5a0:	086ac00c 	add	r11, r13, r12
+ 5a4:	7d4b0004 	ldb	r12, [r9+], #4
+ 5a8:	085b400e 	add	r13, r11, r14
+ 5ac:	7d4b8005 	ldb	r14, [r9+], #5
+ 5b0:	086ac00c 	add	r11, r13, r12
+ 5b4:	7d4b0006 	ldb	r12, [r9+], #6
+ 5b8:	085b400e 	add	r13, r11, r14
+ 5bc:	7d4b8007 	ldb	r14, [r9+], #7
+ 5c0:	086ac00c 	add	r11, r13, r12
+ 5c4:	7d4b0008 	ldb	r12, [r9+], #8
+ 5c8:	085b400e 	add	r13, r11, r14
+ 5cc:	7d4b8009 	ldb	r14, [r9+], #9
+ 5d0:	086ac00c 	add	r11, r13, r12
+ 5d4:	7d4b000a 	ldb	r12, [r9+], #10
+ 5d8:	085b400e 	add	r13, r11, r14
+ 5dc:	7d4b800b 	ldb	r14, [r9+], #11
+ 5e0:	086ac00c 	add	r11, r13, r12
+ 5e4:	7d4b000c 	ldb	r12, [r9+], #12
+ 5e8:	085b400e 	add	r13, r11, r14
+ 5ec:	7d4b800d 	ldb	r14, [r9+], #13
+ 5f0:	086ac00c 	add	r11, r13, r12
+ 5f4:	7d4b000e 	ldb	r12, [r9+], #14
+ 5f8:	085b400e 	add	r13, r11, r14
+ 5fc:	7d4b800f 	ldb	r14, [r9+], #15
+ 600:	086ac00c 	add	r11, r13, r12
+ 604:	5d4b0001 	ldb	r12, [r9+],r1
+ 608:	085b400e 	add	r13, r11, r14
+ 60c:	7d538001 	ldb	r14, [r10+], #1
+ 610:	086ac00c 	add	r11, r13, r12
+ 614:	7d530002 	ldb	r12, [r10+], #2
+ 618:	085b400e 	add	r13, r11, r14
+ 61c:	7d538003 	ldb	r14, [r10+], #3
+ 620:	086ac00c 	add	r11, r13, r12
+ 624:	7d530004 	ldb	r12, [r10+], #4
+ 628:	085b400e 	add	r13, r11, r14
+ 62c:	7d538005 	ldb	r14, [r10+], #5
+ 630:	086ac00c 	add	r11, r13, r12
+ 634:	7d530006 	ldb	r12, [r10+], #6
+ 638:	085b400e 	add	r13, r11, r14
+ 63c:	7d538007 	ldb	r14, [r10+], #7
+ 640:	086ac00c 	add	r11, r13, r12
+ 644:	7d530008 	ldb	r12, [r10+], #8
+ 648:	085b400e 	add	r13, r11, r14
+ 64c:	7d538009 	ldb	r14, [r10+], #9
+ 650:	086ac00c 	add	r11, r13, r12
+ 654:	7d53000a 	ldb	r12, [r10+], #10
+ 658:	085b400e 	add	r13, r11, r14
+ 65c:	7d53800b 	ldb	r14, [r10+], #11
+ 660:	086ac00c 	add	r11, r13, r12
+ 664:	7d53000c 	ldb	r12, [r10+], #12
+ 668:	085b400e 	add	r13, r11, r14
+ 66c:	7d53800d 	ldb	r14, [r10+], #13
+ 670:	086ac00c 	add	r11, r13, r12
+ 674:	7d53000e 	ldb	r12, [r10+], #14
+ 678:	085b400e 	add	r13, r11, r14
+ 67c:	7d53800f 	ldb	r14, [r10+], #15
+ 680:	086ac00c 	add	r11, r13, r12
+ 684:	78eac0c0 	stw	r11, [sp+], #192
+ 688:	79eb40c0 	ldw	r13, [sp+], #192
+ 68c:	0852c001 	add	r11, r10, r1
+ 690:	5d530001 	ldb	r12, [r10+],r1
+ 694:	086b400e 	add	r13, r13, r14
+ 698:	78eb40bc 	stw	r13, [sp+], #188
+ 69c:	086b000c 	add	r12, r13, r12
+ 6a0:	1a000000 	nop			(mov r0,r0)
+ 6a4:	7d5b8001 	ldb	r14, [r11+], #1
+ 6a8:	78eb00b8 	stw	r12, [sp+], #184
+ 6ac:	0863800e 	add	r14, r12, r14
+ 6b0:	1a000000 	nop			(mov r0,r0)
+ 6b4:	7d5b4002 	ldb	r13, [r11+], #2
+ 6b8:	78eb80b4 	stw	r14, [sp+], #180
+ 6bc:	0873400d 	add	r13, r14, r13
+ 6c0:	1a000000 	nop			(mov r0,r0)
+ 6c4:	7d5b0003 	ldb	r12, [r11+], #3
+ 6c8:	78eb40b0 	stw	r13, [sp+], #176
+ 6cc:	086b000c 	add	r12, r13, r12
+ 6d0:	1a000000 	nop			(mov r0,r0)
+ 6d4:	7d5b8004 	ldb	r14, [r11+], #4
+ 6d8:	78eb00ac 	stw	r12, [sp+], #172
+ 6dc:	0863800e 	add	r14, r12, r14
+ 6e0:	1a000000 	nop			(mov r0,r0)
+ 6e4:	7d5b4005 	ldb	r13, [r11+], #5
+ 6e8:	78eb80a8 	stw	r14, [sp+], #168
+ 6ec:	0873400d 	add	r13, r14, r13
+ 6f0:	1a000000 	nop			(mov r0,r0)
+ 6f4:	7d5b0006 	ldb	r12, [r11+], #6
+ 6f8:	78eb40a4 	stw	r13, [sp+], #164
+ 6fc:	086b000c 	add	r12, r13, r12
+ 700:	1a000000 	nop			(mov r0,r0)
+ 704:	7d5b8007 	ldb	r14, [r11+], #7
+ 708:	78eb00a0 	stw	r12, [sp+], #160
+ 70c:	0863800e 	add	r14, r12, r14
+ 710:	1a000000 	nop			(mov r0,r0)
+ 714:	7d5b4008 	ldb	r13, [r11+], #8
+ 718:	78eb809c 	stw	r14, [sp+], #156
+ 71c:	0873400d 	add	r13, r14, r13
+ 720:	1a000000 	nop			(mov r0,r0)
+ 724:	7d5b0009 	ldb	r12, [r11+], #9
+ 728:	78eb4098 	stw	r13, [sp+], #152
+ 72c:	086b000c 	add	r12, r13, r12
+ 730:	1a000000 	nop			(mov r0,r0)
+ 734:	7d5b800a 	ldb	r14, [r11+], #10
+ 738:	78eb0094 	stw	r12, [sp+], #148
+ 73c:	0863800e 	add	r14, r12, r14
+ 740:	1a000000 	nop			(mov r0,r0)
+ 744:	7d5b400b 	ldb	r13, [r11+], #11
+ 748:	78eb8090 	stw	r14, [sp+], #144
+ 74c:	0873400d 	add	r13, r14, r13
+ 750:	1a000000 	nop			(mov r0,r0)
+ 754:	7d5b000c 	ldb	r12, [r11+], #12
+ 758:	78eb408c 	stw	r13, [sp+], #140
+ 75c:	086b000c 	add	r12, r13, r12
+ 760:	1a000000 	nop			(mov r0,r0)
+ 764:	7d5b800d 	ldb	r14, [r11+], #13
+ 768:	78eb0088 	stw	r12, [sp+], #136
+ 76c:	0863800e 	add	r14, r12, r14
+ 770:	1a000000 	nop			(mov r0,r0)
+ 774:	7d5b400e 	ldb	r13, [r11+], #14
+ 778:	78eb8084 	stw	r14, [sp+], #132
+ 77c:	0873400d 	add	r13, r14, r13
+ 780:	1a000000 	nop			(mov r0,r0)
+ 784:	7d5b000f 	ldb	r12, [r11+], #15
+ 788:	78eb070c 	stw	r12, [sp+], #1804
+ 78c:	78eb4080 	stw	r13, [sp+], #128
+ 790:	085b0001 	add	r12, r11, r1
+ 794:	1a000000 	nop			(mov r0,r0)
+ 798:	5d5b8001 	ldb	r14, [r11+],r1
+ 79c:	79eac70c 	ldw	r11, [sp+], #1804
+ 7a0:	086ac00b 	add	r11, r13, r11
+ 7a4:	78eac07c 	stw	r11, [sp+], #124
+ 7a8:	085b800e 	add	r14, r11, r14
+ 7ac:	1a000000 	nop			(mov r0,r0)
+ 7b0:	7d634001 	ldb	r13, [r12+], #1
+ 7b4:	78eb8078 	stw	r14, [sp+], #120
+ 7b8:	0873400d 	add	r13, r14, r13
+ 7bc:	1a000000 	nop			(mov r0,r0)
+ 7c0:	7d62c002 	ldb	r11, [r12+], #2
+ 7c4:	78eb4074 	stw	r13, [sp+], #116
+ 7c8:	086ac00b 	add	r11, r13, r11
+ 7cc:	1a000000 	nop			(mov r0,r0)
+ 7d0:	7d638003 	ldb	r14, [r12+], #3
+ 7d4:	78eac070 	stw	r11, [sp+], #112
+ 7d8:	085b800e 	add	r14, r11, r14
+ 7dc:	1a000000 	nop			(mov r0,r0)
+ 7e0:	7d634004 	ldb	r13, [r12+], #4
+ 7e4:	78eb806c 	stw	r14, [sp+], #108
+ 7e8:	0873400d 	add	r13, r14, r13
+ 7ec:	1a000000 	nop			(mov r0,r0)
+ 7f0:	7d62c005 	ldb	r11, [r12+], #5
+ 7f4:	78eb4068 	stw	r13, [sp+], #104
+ 7f8:	086ac00b 	add	r11, r13, r11
+ 7fc:	1a000000 	nop			(mov r0,r0)
+ 800:	7d638006 	ldb	r14, [r12+], #6
+ 804:	78eac064 	stw	r11, [sp+], #100
+ 808:	085b800e 	add	r14, r11, r14
+ 80c:	1a000000 	nop			(mov r0,r0)
+ 810:	7d634007 	ldb	r13, [r12+], #7
+ 814:	78eb8060 	stw	r14, [sp+], #96
+ 818:	0873400d 	add	r13, r14, r13
+ 81c:	1a000000 	nop			(mov r0,r0)
+ 820:	7d62c008 	ldb	r11, [r12+], #8
+ 824:	78eb405c 	stw	r13, [sp+], #92
+ 828:	086ac00b 	add	r11, r13, r11
+ 82c:	1a000000 	nop			(mov r0,r0)
+ 830:	7d638009 	ldb	r14, [r12+], #9
+ 834:	78eac058 	stw	r11, [sp+], #88
+ 838:	085b800e 	add	r14, r11, r14
+ 83c:	1a000000 	nop			(mov r0,r0)
+ 840:	7d63400a 	ldb	r13, [r12+], #10
+ 844:	78eb8054 	stw	r14, [sp+], #84
+ 848:	0873400d 	add	r13, r14, r13
+ 84c:	1a000000 	nop			(mov r0,r0)
+ 850:	7d62c00b 	ldb	r11, [r12+], #11
+ 854:	78eb4050 	stw	r13, [sp+], #80
+ 858:	086ac00b 	add	r11, r13, r11
+ 85c:	1a000000 	nop			(mov r0,r0)
+ 860:	7d63800c 	ldb	r14, [r12+], #12
+ 864:	78eac04c 	stw	r11, [sp+], #76
+ 868:	085b800e 	add	r14, r11, r14
+ 86c:	1a000000 	nop			(mov r0,r0)
+ 870:	7d63400d 	ldb	r13, [r12+], #13
+ 874:	78eb8048 	stw	r14, [sp+], #72
+ 878:	0873400d 	add	r13, r14, r13
+ 87c:	1a000000 	nop			(mov r0,r0)
+ 880:	7d62c00e 	ldb	r11, [r12+], #14
+ 884:	78eb4044 	stw	r13, [sp+], #68
+ 888:	08634001 	add	r13, r12, r1
+ 88c:	1a000000 	nop			(mov r0,r0)
+ 890:	7d63800f 	ldb	r14, [r12+], #15
+ 894:	086e8001 	add	sl, r13, r1
+ 898:	78eb874c 	stw	r14, [sp+], #1868
+ 89c:	79eb8044 	ldw	r14, [sp+], #68
+ 8a0:	0872c00b 	add	r11, r14, r11
+ 8a4:	78eac040 	stw	r11, [sp+], #64
+ 8a8:	5d630001 	ldb	r12, [r12+],r1
+ 8ac:	78eb0750 	stw	r12, [sp+], #1872
+ 8b0:	79eb074c 	ldw	r12, [sp+], #1868
+ 8b4:	085ac00c 	add	r11, r11, r12
+ 8b8:	79eb0750 	ldw	r12, [sp+], #1872
+ 8bc:	78eac03c 	stw	r11, [sp+], #60
+ 8c0:	085ac00c 	add	r11, r11, r12
+ 8c4:	1a000000 	nop			(mov r0,r0)
+ 8c8:	7d6b8001 	ldb	r14, [r13+], #1
+ 8cc:	78eb8754 	stw	r14, [sp+], #1876
+ 8d0:	78eac038 	stw	r11, [sp+], #56
+ 8d4:	1a000000 	nop			(mov r0,r0)
+ 8d8:	1a000000 	nop			(mov r0,r0)
+ 8dc:	79eb0754 	ldw	r12, [sp+], #1876
+ 8e0:	7dd38001 	ldb	r14, [sl+], #1
+ 8e4:	085ac00c 	add	r11, r11, r12
+ 8e8:	78eb8790 	stw	r14, [sp+], #1936
+ 8ec:	78eac034 	stw	r11, [sp+], #52
+ 8f0:	1a000000 	nop			(mov r0,r0)
+ 8f4:	1a000000 	nop			(mov r0,r0)
+ 8f8:	5d6bc001 	ldb	r15, [r13+],r1
+ 8fc:	7dd38002 	ldb	r14, [sl+], #2
+ 900:	78ebc798 	stw	r15, [sp+], #1944
+ 904:	79ebc790 	ldw	r15, [sp+], #1936
+ 908:	1a000000 	nop			(mov r0,r0)
+ 90c:	79eb0798 	ldw	r12, [sp+], #1944
+ 910:	087bc00e 	add	r15, r15, r14
+ 914:	78ebc3e0 	stw	r15, [sp+], #992
+ 918:	087b000c 	add	r12, r15, r12
+ 91c:	1a000000 	nop			(mov r0,r0)
+ 920:	7d6ac002 	ldb	r11, [r13+], #2
+ 924:	79ebc034 	ldw	r15, [sp+], #52
+ 928:	78eb03dc 	stw	r12, [sp+], #988
+ 92c:	087bc00b 	add	r15, r15, r11
+ 930:	1a000000 	nop			(mov r0,r0)
+ 934:	7d6b8003 	ldb	r14, [r13+], #3
+ 938:	78ebc030 	stw	r15, [sp+], #48
+ 93c:	087b000e 	add	r12, r15, r14
+ 940:	1a000000 	nop			(mov r0,r0)
+ 944:	7dd2c003 	ldb	r11, [sl+], #3
+ 948:	79ebc3dc 	ldw	r15, [sp+], #988
+ 94c:	7d6b8004 	ldb	r14, [r13+], #4
+ 950:	087bc00b 	add	r15, r15, r11
+ 954:	78ebc3d8 	stw	r15, [sp+], #984
+ 958:	0863000e 	add	r12, r12, r14
+ 95c:	1a000000 	nop			(mov r0,r0)
+ 960:	7dd2c004 	ldb	r11, [sl+], #4
+ 964:	78eb0028 	stw	r12, [sp+], #40
+ 968:	087bc00b 	add	r15, r15, r11
+ 96c:	1a000000 	nop			(mov r0,r0)
+ 970:	7d6b8005 	ldb	r14, [r13+], #5
+ 974:	78ebc3d4 	stw	r15, [sp+], #980
+ 978:	0863000e 	add	r12, r12, r14
+ 97c:	1a000000 	nop			(mov r0,r0)
+ 980:	7dd2c005 	ldb	r11, [sl+], #5
+ 984:	78eb0024 	stw	r12, [sp+], #36
+ 988:	087bc00b 	add	r15, r15, r11
+ 98c:	1a000000 	nop			(mov r0,r0)
+ 990:	7d6b8006 	ldb	r14, [r13+], #6
+ 994:	78ebc3d0 	stw	r15, [sp+], #976
+ 998:	0863000e 	add	r12, r12, r14
+ 99c:	1a000000 	nop			(mov r0,r0)
+ 9a0:	7dd2c006 	ldb	r11, [sl+], #6
+ 9a4:	78eb0020 	stw	r12, [sp+], #32
+ 9a8:	087bc00b 	add	r15, r15, r11
+ 9ac:	1a000000 	nop			(mov r0,r0)
+ 9b0:	7d6b8007 	ldb	r14, [r13+], #7
+ 9b4:	78ebc3cc 	stw	r15, [sp+], #972
+ 9b8:	0863000e 	add	r12, r12, r14
+ 9bc:	1a000000 	nop			(mov r0,r0)
+ 9c0:	7dd2c007 	ldb	r11, [sl+], #7
+ 9c4:	78eb001c 	stw	r12, [sp+], #28
+ 9c8:	087bc00b 	add	r15, r15, r11
+ 9cc:	1a000000 	nop			(mov r0,r0)
+ 9d0:	7d6b8008 	ldb	r14, [r13+], #8
+ 9d4:	78ebc3c8 	stw	r15, [sp+], #968
+ 9d8:	0863000e 	add	r12, r12, r14
+ 9dc:	1a000000 	nop			(mov r0,r0)
+ 9e0:	7dd2c008 	ldb	r11, [sl+], #8
+ 9e4:	78eb0018 	stw	r12, [sp+], #24
+ 9e8:	087bc00b 	add	r15, r15, r11
+ 9ec:	1a000000 	nop			(mov r0,r0)
+ 9f0:	7d6b8009 	ldb	r14, [r13+], #9
+ 9f4:	78ebc3c4 	stw	r15, [sp+], #964
+ 9f8:	0863000e 	add	r12, r12, r14
+ 9fc:	1a000000 	nop			(mov r0,r0)
+ a00:	7dd2c009 	ldb	r11, [sl+], #9
+ a04:	78eb0014 	stw	r12, [sp+], #20
+ a08:	087bc00b 	add	r15, r15, r11
+ a0c:	1a000000 	nop			(mov r0,r0)
+ a10:	7d6b800a 	ldb	r14, [r13+], #10
+ a14:	78ebc3c0 	stw	r15, [sp+], #960
+ a18:	0863000e 	add	r12, r12, r14
+ a1c:	1a000000 	nop			(mov r0,r0)
+ a20:	7dd2c00a 	ldb	r11, [sl+], #10
+ a24:	78eb0010 	stw	r12, [sp+], #16
+ a28:	087bc00b 	add	r15, r15, r11
+ a2c:	1a000000 	nop			(mov r0,r0)
+ a30:	7d6b800b 	ldb	r14, [r13+], #11
+ a34:	78ebc3bc 	stw	r15, [sp+], #956
+ a38:	0863000e 	add	r12, r12, r14
+ a3c:	1a000000 	nop			(mov r0,r0)
+ a40:	7dd2c00b 	ldb	r11, [sl+], #11
+ a44:	78eb000c 	stw	r12, [sp+], #12
+ a48:	087bc00b 	add	r15, r15, r11
+ a4c:	1a000000 	nop			(mov r0,r0)
+ a50:	7d6b800c 	ldb	r14, [r13+], #12
+ a54:	78ebc3b8 	stw	r15, [sp+], #952
+ a58:	0863000e 	add	r12, r12, r14
+ a5c:	1a000000 	nop			(mov r0,r0)
+ a60:	7dd2c00c 	ldb	r11, [sl+], #12
+ a64:	78eb0008 	stw	r12, [sp+], #8
+ a68:	087bc00b 	add	r15, r15, r11
+ a6c:	1a000000 	nop			(mov r0,r0)
+ a70:	7d6b800d 	ldb	r14, [r13+], #13
+ a74:	78ebc3b4 	stw	r15, [sp+], #948
+ a78:	0863000e 	add	r12, r12, r14
+ a7c:	1a000000 	nop			(mov r0,r0)
+ a80:	7dd2c00d 	ldb	r11, [sl+], #13
+ a84:	78eb0004 	stw	r12, [sp+], #4
+ a88:	087bc00b 	add	r15, r15, r11
+ a8c:	1a000000 	nop			(mov r0,r0)
+ a90:	7d6b800e 	ldb	r14, [r13+], #14
+ a94:	78ebc3b0 	stw	r15, [sp+], #944
+ a98:	0863000e 	add	r12, r12, r14
+ a9c:	1a000000 	nop			(mov r0,r0)
+ aa0:	7dd2c00e 	ldb	r11, [sl+], #14
+ aa4:	78eb0000 	stw	r12, [sp+]
+ aa8:	7dd6800f 	ldb	sl, [sl+], #15
+ aac:	087b800b 	add	r14, r15, r11
+ ab0:	78ee87cc 	stw	sl, [sp+], #1996
+ ab4:	0875c01a 	add	r23, r14, sl
+ ab8:	1a000000 	nop			(mov r0,r0)
+ abc:	7d6b400f 	ldb	r13, [r13+], #15
+ ac0:	0866000d 	add	r24, r12, r13
+ ac4:	08b80018 	add	r0, r23, r24
+ ac8:	28ef787d 	add	sp, sp, #2000	; 0x7d0
+ acc:	8bec7e7e 	ldm.w	(r17, r18, r19, r20, r21, r22, r23, r24, r25, sl, fp, pc), [sp]+
